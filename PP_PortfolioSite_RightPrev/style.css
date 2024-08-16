@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #f5f5f5;
+    color: #0f0f0f;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    color: #777;
+    font-style: italic;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 5px;
+}
+
+.project-row {
+    display: contents;
+    cursor: pointer;
+}
+
+.project-row > * {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.project-row:hover > * {
+    color: #00aa00;
+}
+
+.project-year {
+    font-weight: bold;
+}
+
+.project-title {
+    font-style: italic;
+}
+
+.project-role, .project-tech {
+    color: #777;
+}
+
+.project-details {
+    grid-column: 1 / -1;
+    display: none;
+    padding: 30px;
+    background-color: #e5e5e5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.project-details h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #00aa00;
+}
+
+.image-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 300px;
+    pointer-events: none;
+}
+
+.project-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    overflow: visible;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(20px);
+    border-radius: 5px;
+}
+
+.project-image.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0,170,0,0.1), rgba(0,0,170,0.1));
+    pointer-events: none;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(90deg, #f5f5f5 21px, transparent 1%) center,
+        linear-gradient(#f5f5f5 21px, transparent 1%) center,
+        #ddd;
+    background-size: 22px 22px;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+#projectTable th, #projectTable td {
+    padding-right: 30px; /* Adjust this value to increase or decrease the space */
+}
+
+.logo-image {
+    transform: translateX(-20px);
+}
