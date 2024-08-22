@@ -3,31 +3,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Horta - Portfolio</title>
-<link rel="stylesheet" href="style.css">  
+    <title>Lucas Horta - Creative Technologist Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="Logo.png" alt="" width="300px" class="logo-image">
-        <p class="subtitle">Creative Technologist in VR & Digital Design</p>
+        <div class="header-content">
+            <img src="Logo.png" alt="Logo" class="logo-image" width="300">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <table id="projectTable">
-            <thead>
-                <tr>
-                    <th>Year</th>
-                    <th>Project</th>
-                    <th>Role</th>
-                    <th>Technologies</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Project rows will be inserted here by JavaScript -->
-            </tbody>
-        </table>
+        <section id="projects">
+            
+            <div class="project-grid">
+                
+                    <div class="project-header">
+                    <div class="column">Year</div>
+                    <div class="column">Project</div>
+                    <div class="column">Role</div>
+                    <div class="column">Technologies</div>
+                 </div>
+                 <div class="wrapperForProjects">
+                 <div class="project-row" data-image="ExistentialCrisis.png">
+                    <div class="column">2024</div>
+                    <div class="column project-title">Existential Crisis</div>
+                    <div class="column">Virtual Reality Developer</div>
+                    <div class="column">Unity, VR, Sound Design, 3D Modeling</div>
+                 </div>
+                 <div class="project-details">
+                    <div class="project-media">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ajdei3XBVC8?si=tMm7g2Cpt6vdB_tG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtubeIframe"></iframe>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-content">
+                            <div class="skills">
+                                <p><strong>Key Skills:</strong> Sound Design, Interaction Design, 3D Modelling, VFX Graph Particle System, Lighting Design, Animation systems, C# Unity Scripting, Stencil Buffer Based Custom Render Pipeline</p>
+                            </div>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <h4>Exhibitions</h4>
+                                    <ul>
+                                        <li>International Symposium of Electronic Arts (ISEA) 2024</li>
+                                        <li>ACMI Audience Lab, March 2024</li>
+                                    </ul>
+                                </div>
+                                <div class="meta-item">
+                                    <h4>Collaborator</h4>
+                                    <p>Artistic Direction by Stephanie Andrews</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+
+             <div class="wrapperForProjects">
+                
+                <div class="project-row" data-image="IMG_2212.png">
+                    <div class="column">2024</div>
+                    <div class="column project-title">MycoCosm Studio</div>
+                    <div class="column">Creative Coder & Animator</div>
+                    <div class="column">Web Development, AI, Conceptual Design</div>
+                </div>
+                <div class="project-details">
+                    <div class="project-media">
+                        <iframe src="https://lucash0rta.github.io/Mycocosm/GardenHTML/index.html" 
+        frameborder="0" 
+        allowfullscreen class="siteIframe">
+</iframe>
+                    </div>
+                    <div class="project-info">
+                        
+                     
+                        <div class="project-content">
+                            <div class="project-description">
+                                <p>A two week international Studio //  Collaborating on design with peers via discord and creating a Garden Site reflecting the groups work. </p>
+                                <br>
+                            
+                            </div>
+                            <div class="skills">
+                                <p><strong>Key Skills:</strong> Website Development, AI in Concepting, Conceptual Design, Collaborative Workflow</p>
+                            </div>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <h4>Partnerships</h4>
+                                    <ul>
+                                        <li>RMIT University</li>
+                                        <li>Elisava - Barcelona</li>
+                                        <li>London College of Communication</li>
+                                    </ul>
+                                </div>
+                                <div class="meta-item">
+                                    <h4>Exhibtions</h4>
+                                    <p>Barcelona Design Week, October 2024
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <div class="wrapperForProjects">
+                <div class="project-row" data-image="hanoi-ad-hoc.png">
+                    <div class="column">2024</div>
+                    <div class="column project-title">Extending Heritage with Hanoi Ad Hoc</div>
+                    <div class="column">Speaker and Presenter</div>
+                    <div class="column">VR, 3D Modeling, Digital Twin Creation</div>
+                </div>
+                <div class="project-details">
+                    <div class="project-media">
+                        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- First Slide - Active -->
+                                <div class="carousel-item active">
+                                    <iframe src="https://play.unity.com/en/games/05a90663-48a4-413e-8fa7-27ea954fd144/the-grid" frameborder="0" class="siteIframe"></iframe>
+                                
+                                </div>
+                        
+                                <!-- Second Slide -->
+                                <div class="carousel-item">
+                                    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWJ1d3Q3NzJtY2hwaThzNW1kcWp1cWYxNjZsbWw2ZXczMHk1cmtnaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CkZm2ofzAi69A7i8TS/giphy.gif" alt="360 Render" class="gifIMG">
+                        
+                                </div>
+                        
+                                <!-- Third Slide -->
+                                <div class="carousel-item">
+                                    <iframe src="https://www.youtube.com/embed/ZpZHg-Hf8bI?si=Oi_mqtBuMuDcuUB4" title="YouTube video player" frameborder="0" class="siteIframe" ></iframe>
+                       
+                                </div>
+                            </div>
+
+                            <!-- Fourth Slide -->
+                            <div class="carousel-item">
+                                <img src="https://i.imgur.com/QAKGqaa.jpeg" alt="">
+                            </div>
+
+                            <!-- Fifth Slide  -->
+                            <div class="carousel-item">
+                                <img src="https://i.imgur.com/iVhxwTp.jpeg" alt="">
+                            </div>
+                        
+                            <!-- Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+                    <div class="project-info">
+                        <div class="project-content">
+                            <div class="project-description">
+                                <p>Explored how VR and 3D technologies can be used in heritage preservation, led by the architecture firm Hanoi Ad Hoc.</p>
+                            </div>
+                            <div class="skills">
+                                <ul>
+                                    <li>Created a VR walkthrough and video essay reflecting on the RMIT study tour experience.</li>
+                                    <li>Documented and created a digital twin of "The Grid" exhibition at the Gia Lam Train Factory.</li>
+                                    <li>Presented at ISEA Conference 2024, including a research paper on low-cost photogrammetry methods in dense urban environments.</li>
+                                </ul>
+                            </div>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <h4>Exhibitions</h4>
+                                    <ul>
+                                        <li>UN Youth Hanoi 2023</li>
+                                        <li>International Symposium of Electronic Arts 2024 - VR</li>
+                                        <li>London College of Communication</li>
+                                    </ul>
+                                </div>
+                                <div class="meta-item">
+                                    <h4>Exhibtions</h4>
+                                    <p>Barcelona Design Week, October 2024
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="project-row" data-image="non-linear-narrative.png">
+                    <div class="column">2024</div>
+                    <div class="column project-title">Non-Linear Narrative Project</div>
+                    <div class="column">3D Artist & Animator</div>
+                    <div class="column">ZBrush, Maya, Unity, Substance Painter</div>
+                </div>
+                <div class="project-details">
+                    <h3>Non-Linear Narrative Project</h3>
+                    <p>Developed an autonomous non-linear narrative piece as part of my main studio class.</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Concept Art & Digital Sculpting: Created concept art and digitally sculpted models from scratch.</li>
+                        <li>Complex Rigging & Animation: Designed and implemented intricate rigging systems for animation.</li>
+                        <li>3D Modeling: Focused on low-poly modeling, ensuring efficient geometric flow and optimized performance.</li>
+                        <li>Texturing & Shaders: Applied advanced shaders and detailed textures using Substance Painter.</li>
+                        <li>Unity Integration: Developed the final piece to be self-running within Unity, incorporating non-linear narrative elements.</li>
+                    </ul>
+                </div>
+                
+                <div class="project-row" data-image="DaveCourt.png">
+                    <div class="column">2023</div>
+                    <div class="column project-title">House Party - Dave Court</div>
+                    <div class="column">Photogrammetry-Based 3D House Remodeling</div>
+                    <div class="column">Photogrammetry, 3D Modeling, Texturing</div>
+                </div>
+                <div class="project-details">
+                    <h3>House Party - Dave Court</h3>
+                    <p>Remodeled a house using photogrammetry and optimized textures.</p>
+                    <ul>
+                        <li>Captured detailed photographs, edited in Photoshop for texture creation.</li>
+                        <li>Utilized professional photogrammetry as an accurate reference point for the project's scale.</li>
+                        <li>Remodeled the entire house using optimized and clean geometry.</li>
+                        <li>Integrated textures onto the model with precision and clarity.</li>
+                        <li>Organized and labeled output files, ensuring easy access for collaborators.</li>
+                    </ul>
+                    
+                </div>
+                
+               
+                
+                <div class="project-row" data-image="mediaPlayer.png">
+                    <div class="column">2023</div>
+                    <div class="column project-title">Custom Media Player</div>
+                    <div class="column">Creative Coder</div>
+                    <div class="column">Java, HTML, CSS, 3D Modeling</div>
+                </div>
+                <div class="project-details">
+                    <h3>Custom Media Player</h3>
+                    <p>Developed a custom media player as a creative coding experiment.</p>
+                    <ul>
+                        <li>Sought design inspiration from established media players and online aesthetics.</li>
+                        <li>Designed 3D assets, textured and rendered them.</li>
+                        <li>Utilized Java, HTML, and CSS for animation.</li>
+                    </ul>
+                </div>
+                
+                <div class="project-row" data-image="cyberFeminism.png">
+                    <div class="column">2023</div>
+                    <div class="column project-title">Cyber-Feminist Speculative Future</div>
+                    <div class="column">3D Artist & Animator</div>
+                    <div class="column">Unreal Engine, Metahumans, Mixamo, Blender</div>
+                </div>
+                <div class="project-details">
+                    <h3>Cyber-Feminist Speculative Future</h3>
+                    <p>Created a short animation and poem inspired by cyberfeminist literature.</p>
+                    <ul>
+                        <li>Explored cyberfeminism concepts through influential texts and artworks.</li>
+                        <li>Developed imagery inspired by cyberfeminist pioneers.</li>
+                        <li>Created mood boards, researched, and refined concepts.</li>
+                        <li>Executed 3D modeling, texturing, and dynamic animation.</li>
+                        <li>Enhanced realism using Unreal Engine's live link for motion capture.</li>
+                        <li>Utilized Metahumans, Mixamo, Photoshop, Premiere Pro, and Blender.</li>
+                    </ul>
+                </div>
+                
+                <div class="project-row" data-image="Draining.png">
+                    <div class="column">2023</div>
+                    <div class="column project-title">Draining - In Disillusion</div>
+                    <div class="column">3D Environment Designer</div>
+                    <div class="column">3D Modeling, Animation, Rendering</div>
+                </div>
+                <div class="project-details">
+                    <h3>Draining - In Disillusion</h3>
+                    <p>Collaborated with video producers to develop creative concepts for VFX shots.</p>
+                    <ul>
+                        <li>Designed 3D environments based on client briefs.</li>
+                        <li>Modeled, textured, animated, and rendered the video.</li>
+                    </ul>
+                </div>
+                
+                <div class="project-row" data-image="ParadiseClub.png">
+                    <div class="column">2023</div>
+                    <div class="column project-title">Paradise Club - The Seed</div>
+                    <div class="column">3D Environment Designer</div>
+                    <div class="column">3D Modeling, Animation, Rendering</div>
+                </div>
+                <div class="project-details">
+                    <h3>Paradise Club - The Seed</h3>
+                    <p>Collaborated with video producers to develop creative concepts for VFX shots.</p>
+                    <ul>
+                        <li>Designed 3D environments based on client briefs.</li>
+                        <li>Modeled, textured, animated, and rendered the video.</li>
+                    </ul>
+                </div>
+                
+                <div class="project-row" data-image="BrewFinder.png">
+                    <div class="column">2023</div>
+                    <div class="column project-title">Brew Finder</div>
+                    <div class="column">UX/UI Designer</div>
+                    <div class="column">Figma</div>
+                </div>
+                <div class="project-details">
+                    <h3>Brew Finder</h3>
+                    <p>Designed Brew Finder, a high-fidelity, functioning prototype in Figma. Created an engaging user experience tailored for Melbourne's coffee enthusiasts.</p>
+                </div>
+                
+                <div class="project-row" data-image="Anada.png">
+                    <div class="column">2023</div>
+                    <div class="column project-title">Anada Spanish Restaurant</div>
+                    <div class="column">Waiter & Content Creator</div>
+                    <div class="column">DSLR, Adobe Premiere Pro</div>
+                </div>
+                <div class="project-details">
+                    <h3>Anada Spanish Restaurant</h3>
+                    <p>While working as a waiter, contributed to the restaurant's marketing efforts by creating visual content for social media channels.</p>
+                    <ul>
+                        <li>Produced short videos and photos for Instagram reels using a DSLR camera.</li>
+                        <li>Wrote engaging captions to accompany the visual content.</li>
+                        <li>Assisted in the development of additional promotional materials.</li>
+                        <li>Contributed content intermittently from May to November 2023.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="conferences">
+            <h2>Conference Presentations</h2>
+            <div class="conference">
+                <h3>ISEA Conference 2024</h3>
+                <p><em>Speaker, Exhibiting Artist, & Author | June 25, 2024</em></p>
+                <ul>
+                    <li>Delivered a presentation of my VR-based video essay, examining the role of virtual reality in digital preservation and heritage.</li>
+                    <li>Participated in an exhibition alongside other VR artists, offering insights into my creative process and the development of VR projects for heritage preservation.</li>
+                    <li>Presented a talk on low-cost photogrammetry methods in dense urban environments, focusing on practical applications and challenges.</li>
+                    <li>Authored a brief paper on low-cost photogrammetry methods, accessible through the ISEA website.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Virtual Reality Development</li>
+                <li>3D Modeling and Animation</li>
+                <li>Unity and Unreal Engine</li>
+                <li>Sound Design</li>
+                <li>Interaction Design</li>
+                <li>Web Development</li>
+                <li>UX/UI Design</li>
+                <li>Photogrammetry</li>
+                <li>Creative Coding</li>
+                <li>Video Production and Editing</li>
+            </ul>
+        </section>
+
+        <section id="software">
+            <h2>Software Proficiency</h2>
+            <ul>
+                <li>Unity</li>
+                <li>Unreal Engine</li>
+                <li>ZBrush</li>
+                <li>Maya</li>
+                <li>Blender</li>
+                <li>Substance Painter</li>
+                <li>Adobe Creative Suite (Photoshop, Premiere Pro, etc.)</li>
+                <li>Figma</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>RMIT University</h3>
+                <p><em>Bachelor of Digital Media</em></p>
+                <p>Expected Graduation: [Year]</p>
+            </div>
+        </section>
+
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3>Technical Assistant</h3>
+                <p><em>RMIT University</em></p>
+                <p>Current Position</p>
+                <ul>
+                    <li>Focus on creating VR art pieces using Unity</li>
+                    <li>Assist in technical aspects of digital media projects</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Waiter & Content Creator</h3>
+                <p><em>Anada Spanish Restaurant</em></p>
+                <p>2022 - 2023</p>
+                <ul>
+                    <li>Created visual content for social media channels</li>
+                    <li>Produced short videos and photos for Instagram reels</li>
+                    <li>Assisted in developing promotional materials</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Follow me on Instagram: <a href="#">[Instagram Profile]</a></p>
+            <p>Send me an email: <a href="mailto:lucashorta2001@gmail.com">lucashorta2001@gmail.com</a></p>
+        </section>
     </main>
-    <div class="image-container" id="imageContainer"></div>
+
+    <div id="imageContainer" class="image-container"></div>
 
     <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
