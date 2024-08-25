@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 50);
         });
 
-        row.addEventListener('mouseleave', () => {
+       /*  row.addEventListener('mouseleave', () => {
             setTimeout(() => {
                 const imgs = imageContainer.querySelectorAll('.project-image');
                 imgs.forEach(img => {
@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     img.style.transform = 'translateY(20px)';
                     setTimeout(() => {
                         img.remove();
-                    }, 300);
+                    }, 3000);
                 });
             }, 6000); // 6 seconds delay
-        });
+        }); */
     });
 });
