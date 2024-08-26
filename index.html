@@ -1,281 +1,542 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-    <head>
-        <link href="https://fonts.cdnfonts.com/css/neutral-face" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
-
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device=width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer> </script>
-        
-        <title>LucasHorta</title>
-       
-        <div class="hoverTrigger">
-        <h1 id="caption">
-            Lucas Horta</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Horta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Logo.png" alt="Logo" class="logo-image" width="300">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me & CV</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+
+    <main>
+        <section id="projects">
+            
+            <div class="project-grid">
+                
+                    <div class="project-header">
+                    <div class="column">Year</div>
+                    <div class="column">Project</div>
+                    <div class="column">Role</div>
+                    <div class="column">Technologies</div>
+                 </div>
+
+                 <!-- !!! Exisistential Crisis VR !!! -->
+                 <div class="wrapperForProjects">
+                 <div class="project-row" data-image="ExistentialCrisis.png">
+                    <div class="column">2024</div>
+                    <div class="column project-title">Existential Crisis</div>
+                    <div class="column">Virtual Reality Developer</div>
+                    <div class="column">Unity, VR, Sound Design, 3D Modeling</div>
+                 </div>
+                 <div class="project-details">
+                    <div class="project-media">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ajdei3XBVC8?si=tMm7g2Cpt6vdB_tG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtubeIframe"></iframe>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-content">
+                            <div class="skills">
+                                <p><strong>Key Skills:</strong> Sound Design, Interaction Design, 3D Modelling, VFX Graph Particle System, Lighting Design, Animation systems, C# Unity Scripting, Stencil Buffer Based Custom Render Pipeline</p>
+                            </div>
+                            <div class="project-meta">
+
+                                <div class="meta-item">
+                                    <h4>Collaborators</h4>
+                                    <li>Artistic Direction by Stephanie Andrews</li>
+                                </div>
+
+                                <div class="meta-item">
+                                    <h4>Exhibitions</h4>
+                                    <ul>
+                                        <li>International Symposium of Electronic Arts (ISEA) 2024</li>
+                                        <li>ACMI Audience Lab, March 2024</li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+
+                <!-- Mycocosm Studio -->
+
+             <div class="wrapperForProjects">
+                
+                <div class="project-row" data-image="Mycocosm.png">
+                    <div class="column">2024</div>
+                    <div class="column project-title">MycoCosm Studio</div>
+                    <div class="column">Creative Coder & Animator</div>
+                    <div class="column">Web Development, AI, Conceptual Design</div>
+                </div>
+                <div class="project-details">
+                    <div class="project-media">
+                        <iframe src="https://lucash0rta.github.io/Mycocosm/GardenHTML/index.html" 
+        frameborder="0" 
+        allowfullscreen class="siteIframe">
+</iframe>
+                    </div>
+                    <div class="project-info">
+                        
+                     
+                        <div class="project-content">
+                            <div class="project-description">
+                                <p>A two week international Studio //  Collaborating on design with peers via discord and creating a Garden Site reflecting the groups work. </p>
+                                <br>
+                            
+                            </div>
+                            <div class="skills">
+                                <p><strong>Key Skills:</strong> Website Development, AI in Concepting, Conceptual Design, Collaborative Workflow</p>
+                            </div>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <h4>Collaborators</h4>
+                                    <ul>
+                                        <li>RMIT University</li>
+                                        <li>Elisava - Barcelona</li>
+                                        <li>London College of Communication</li>
+                                    </ul>
+                                </div>
+                                <div class="meta-item">
+                                    <h4>Exhibtions</h4>
+                                    <p>Barcelona Design Week, October 2024
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-        
-
-    </head>
-
-    <div id="overlay"></div>
-
-    <div class="popupCardAboutMe">
-        <button id="closeButtonPopup">&times</button>
-        <div id="popupBoxHeader">
-        <h1>Lucas Horta</h1>
-        <br>
-        <h2>Creative Technologist in VR & Digital Design</h2>
-        <br>
-        </div>
-        <div class="popupTextBox">
-        <p>A dynamic and creative Digital Media student at RMIT University, 
-            I am passionate about blending technology and art to create immersive experiences.
-             Specializing in VR development, I currently excel as a Technical Assistant at RMIT,
-              focusing on creating VR art pieces using Unity. 
-              My academic and professional journey is characterized by a strong 
-              foundation in UX/UI design, 3D modeling, and web development</p>
-        <!-- <a href="#">hello</a> -->
+ <!-- Extending Heritage  -->
+<div class="wrapperForProjects">
+    <div class="project-row" data-image="ExtendingHeritage.jpg">
+        <div class="column">2024</div>
+        <div class="column project-title">Extending Heritage with Hanoi Ad Hoc</div>
+        <div class="column">Speaker and Presenter</div>
+        <div class="column">VR, 3D Modeling, Digital Twin Creation</div>
     </div>
-    <img src="Lucas_Profile.jpeg" alt="Photo of Lucas Horta" id="profilePicture">
+    <div class="project-details">
+        <div class="project-media">
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <!-- First Slide (Make sure at least one slide has the active class) -->
+                    <div class="carousel-item active">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWJ1d3Q3NzJtY2hwaThzNW1kcWp1cWYxNjZsbWw2ZXczMHk1cmtnaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CkZm2ofzAi69A7i8TS/giphy.gif" alt="360 Render" class="gifIMG">
+                    </div>
+
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <iframe src="https://www.youtube.com/embed/ZpZHg-Hf8bI?si=Oi_mqtBuMuDcuUB4" title="YouTube video player" frameborder="0" class="siteIframe"></iframe>
+                    </div>
+
+                    <!-- Third Slide -->
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/f1/a0/96/f1a096c9d9eac443657bb0e525d119e6.jpg" alt="" class="gifIMG">
+                    </div>
+
+                    <!-- Fourth Slide -->
+                    <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/6e/43/0b/6e430b9a443987ff3ce6db14bba1b50a.jpg" alt="" class="gifIMG">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="project-info">
+            <div class="project-content">
+                <div class="project-description">
+                    <a href="https://play.unity.com/en/games/05a90663-48a4-413e-8fa7-27ea954fd144/the-grid" target="_blank">
+                        Click here to access the web-based exhibition of "The Grid" by Hanoi Ad-Hoc
+                    </a>
+                    <p>Explored how VR and 3D technologies can be used in heritage preservation, led by the architecture firm Hanoi Ad Hoc.</p>
+                </div>
+                <div class="skills">
+                    <ul>
+                        <li>Created a VR walkthrough and video essay reflecting on the RMIT study tour experience.</li>
+                        <li>Documented and created a digital twin of "The Grid" exhibition at the Gia Lam Train Factory.</li>
+                        <li>Presented at ISEA Conference 2024, including a research paper on low-cost photogrammetry methods in dense urban environments.</li>
+                    </ul>
+                </div>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <h4>Exhibitions</h4>
+                        <ul>
+                            <li>UN Youth Hanoi 2023</li>
+                            <li>International Symposium of Electronic Arts 2024 - VR</li>
+                        </ul>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Collaborators</h4>
+                        <li>Hanoi Ad-Hoc</li>
+                        <li>Hanoi RMIT Peers</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-    <body> 
-        <div class="ButtonsForFilter">
-            <button class="FilterButton" id="set1" onclick="updateImageFiles(imageSets)">All</button>
-            <button class="FilterButton" id="set2" onclick="updateImageFiles2(imageSets)">HTML</button>
-            <button class="FilterButton" id="set3" onclick="updateImageFiles3(imageSets)">3d</button>
-            <button class="FilterButton" id="set4">Recent</button>
-            <button class="FilterButton" id="aboutPopup">About</button>
-        </div>
+    <!-- Non-Linear Narrative Project -->
+<div class="wrapperForProjects">
+    <div class="project-row" data-image="3dClass.png">
+        <div class="column">2024</div>
+        <div class="column project-title">Non-Linear Narrative Project</div>
+        <div class="column">3D Artist & Animator</div>
+        <div class="column">ZBrush, Maya, Unity, Substance Painter</div>
+    </div>
 
-        <canvas id = "canvas1"></canvas>
+    <div class="project-details">
+        <div class="project-media">
+            <div id="projectCarousel2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                   <!-- First Slide - Active -->
+                   <div class="carousel-item active">
+                    <div class="tiktok-container">
+                        <div class="tiktok-wrapper">
+                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wh0mpwh0mp14/video/7381751937290538241" data-video-id="7381751937290538241">
+                                <section>
+                                    <a target="_blank" title="@wh0mpwh0mp14" href="https://www.tiktok.com/@wh0mpwh0mp14?refer=embed">@wh0mpwh0mp14</a>
+                                    <a title="letsplay" target="_blank" href="https://www.tiktok.com/tag/letsplay?refer=embed">#letsplay</a>
+                                    <a target="_blank" title="♬ Raf's Mega Sounds - Raf's" href="https://www.tiktok.com/music/Raf's-Mega-Sounds-7120594206220879874?refer=embed">♬ Raf's Mega Sounds - Raf's</a>
+                                </section>
+                            </blockquote>
+                        </div>
+                        <div class="tiktok-wrapper">
+                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wh0mpwh0mp14/video/7381753143849274641" data-video-id="7381753143849274641">
+                                <section>
+                                    <a target="_blank" title="@wh0mpwh0mp14" href="https://www.tiktok.com/@wh0mpwh0mp14?refer=embed">@wh0mpwh0mp14</a>
+                                    Real life, <a title="grwm" target="_blank" href="https://www.tiktok.com/tag/grwm?refer=embed">#grwm</a>
+                                    <a target="_blank" title="♬ original sound - wh0mpwh0mp14" href="https://www.tiktok.com/music/original-sound-7381753217053035281?refer=embed">♬ original sound - wh0mpwh0mp14</a>
+                                </section>
+                            </blockquote>
+                        </div>
+                    </div>
 
-        <!--  beginning of divs for works  -->
-        <div class="contentHolder">
 
-    <!-- Extending Heritage with Hanoi Ad Hoc -->
-        <div id="ExtendingHeritageDiv" class="popupCard">
-         <div class="closeButton" id="closeButtonExtendingHeritage">
-        <img src="cross.png" alt=""></div>
-        <h1>
-        Extending Heritage with Hanoi Ad Hoc</h1>
-        <h2>Exploring how VR and 3D technologies can be used in heritage preservation, led by architecture firm <i>Hanoi Ad Hoc</i></h2>
-        <div id="ExtendingHeritageDiv" class="bodyTextPopups">
-            <h1>HEEEEEEEE</h1>
-        </div>
-      </div>
+                </div>
 
-
-            <!-- DaveCourt Div -->
-
-            <div  class="popupCard">
-                <div class="closeButton" id="closeButtonHouseParty">
-                    <img src="cross.png" alt=""></div>
-                <h1>
-                    House Party - Dave Court
-                </h1>
-                <br>
-                <h2>Photogrammetry-based 3D house remodeling with optimized textures and organized outputs.</h2>
-                <div id="DaveCourtDiv" class="bodyTextPopups">
-                <br><p>
-                    <ul>
-                        <li>Captured detailed photographs of the house to photoshop and use as textures.</li>
-                        <li>Utilized professional photogrammetry as an accurate reference point for the scale of the project.</li>
-                        <li>Remodeled the entire house using optimized and clean geometry</li>
-                        <li>Skillfully integrated textures onto the model, ensuring clarity and precision in their placement.</li>
-                        <li>Organised and labelled output files including textures at multiple different resolutions and 3d models in a manner that was
-                            easy for collaborators to access or remix.
-                        </li>
-                        <br>
-        
-                        <br>
-                        <p><a href="https://monaverse.com/spaces/house-party">Explore the house in your browser here</a></h3>
-        
-                        <br>
-                        <p><a href="https://www.davecourt.art/project/house-party#">Discover more about the project on Dave Courts website.</a></h3><br>
-                      </ul>
+                <!-- Second Slide Non-Linear Narrative Project -->
+                <div class="carousel-item">
+                    <div class="tiktok-container">
                     
-                </p>
-        <br><br>
-        <div class="imageFlex"></div>
-        <img src="https://uploads-ssl.webflow.com/6244d97d083df084b17ea3e6/62d37763727756434b7b6d66_Dave%20Court%20House%20party%20exhibition%20(81%20of%20107)-p-1080.jpg" alt="" class="HousePartyFlexBox">
-        <img src="https://uploads-ssl.webflow.com/6244d97d083df084b17ea3e6/62d3776449432b38d3046092_Dave%20Court%20House%20party%20exhibition%20(85%20of%20107)-p-1080.jpg" alt="" class="HousePartyFlexBox">
-        <img src="https://uploads-ssl.webflow.com/6244d97d083df084b17ea3e6/62d377647277563f717b6d67_Dave%20Court%20House%20party%20exhibition%20(86%20of%20107)-p-1080.jpg" alt="" class="HousePartyFlexBox">
-        <img src="https://uploads-ssl.webflow.com/6244d97d083df084b17ea3e6/62d37763aa648fb82c0a2f0e_Dave%20Court%20House%20party%20exhibition%20(89%20of%20107)-p-1080.jpg" alt="" class="HousePartyFlexBox">
-        <img src="https://uploads-ssl.webflow.com/6244d97d083df084b17ea3e6/62d374a4a73d9042d69665ad_Dave%20Court%20House%20party%20exhibition%20(53%20of%20107)-p-1080.jpg" alt="" class="HousePartyFlexBox">
-        </div>
-            </div>
+                        <div class="tiktok-wrapper">
+                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wh0mpwh0mp14/video/7381750596237315345" data-video-id="7381750596237315345">
+                                <section>
+                                    <a target="_blank" title="@wh0mpwh0mp14" href="https://www.tiktok.com/@wh0mpwh0mp14?refer=embed">@wh0mpwh0mp14</a>
+                                    <p></p>
+                                    <a target="_blank" title="♬ Collide (sped up) - Justine Skye" href="https://www.tiktok.com/music/Collide-sped-up-7149845524978338561?refer=embed">♬ Collide (sped up) - Justine Skye</a>
+                                </section>
+                            </blockquote>
+                        </div>
+                        <div class="tiktok-wrapper">
+                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wh0mpwh0mp14/video/7381750588490501377" data-video-id="7381750588490501377">
+                                <section>
+                                    <a target="_blank" title="@wh0mpwh0mp14" href="https://www.tiktok.com/@wh0mpwh0mp14?refer=embed">@wh0mpwh0mp14</a>
+                                    <p></p>
+                                    <a target="_blank" title="♬ original sound - wh0mpwh0mp14" href="https://www.tiktok.com/music/original-sound-7381750690114964240?refer=embed">♬ original sound - wh0mpwh0mp14</a>
+                                </section>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="popupCard">
-            
-            <h1>
-                3D-ME
-            </h1>
-            <br>
-            <div class="closeButton" id="closeButton3dMe">
-                <img src="cross.png" alt=""></div>
-            <h2>Personalised avatars for use on 3d social platforms using facial scans and photgrammetry. </h2>
-            <div id="ThreeDMeDiv" class="bodyTextPopups">
+
+                <!-- Sixth Slide ------ Non-Linear Narrative Project  -->
+                <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/zjO77IzhZlc?si=e9RRcABHAQ0lLKf3" frameborder="0" class="siteIframe"></iframe>
+                </div>
+
+                <!-- Seventh Slide ------ Non-Linear Narrative Project  -->
+                <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/3OuHNuPWLrc?si=tZKV4Ji_DXWWMTJQ" frameborder="0" class="siteIframe"></iframe>
+                </div>
                 
-            <br><p>
-                Utilised photogrammetry to create a detailed recreation of facial features and used Photoshop to stitch the layers together and touch up details to ensure even lighting and remove any artifacting from the photogrammetry process.
-                Remodelled and optimised the output geometry.
-                <br>
-                Modeling of clothing models.
-                <br>
-                Rigging and animating the character.
-            </p>
-<br><br>
-            <iframe title="vimeo-player" src="https://playe
-            r.vimeo.com/video/814620607?h=512e09c6ec" width="100%" height="360px" frameborder="0"    allowfullscreen></iframe>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
+        </div>
+
+        <p>Developed an autonomous non-linear narrative piece as part of my main studio class.</p>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+            <li>Concept Art & Digital Sculpting: Created concept art and digitally sculpted models from scratch.</li>
+            <li>Complex Rigging & Animation: Designed and implemented intricate rigging systems for animation.</li>
+            <li>3D Modeling: Focused on low-poly modeling, ensuring efficient geometric flow and optimized performance.</li>
+            <li>Texturing & Shaders: Applied advanced shaders and detailed textures using Substance Painter.</li>
+            <li>Unity Integration: Developed the final piece to be self-running within Unity, incorporating non-linear narrative elements.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<!-- -------- CUSTOM MEDIA PLAYER ----------- -->
+  <div class="wrapperForProjects">          
+                
+                <div class="project-row" data-image="mediaPlayer.png">
+                    <div class="column">2023</div>
+                    <div class="column project-title">Custom Media Player</div>
+                    <div class="column">Creative Coder</div>
+                    <div class="column">Java, HTML, CSS, 3D Modeling</div>
+                </div>
+                <div class="project-details">
+                    <div class="project-media">
+                        <iframe src="https://lucash0rta.github.io/im2350/a2/e4/index.html" frameborder="0" class="siteIframe"></iframe>
+                        <a href="https://lucash0rta.github.io/im2350/a2/e4/index.html">Link to the site</a>
+                    </div>
+                    
+                    <p>Developed a custom media player as a creative coding experiment.</p>
+                    <ul>
+                        <li>Sought design inspiration from established media players and online aesthetics.</li>
+                        <li>Designed 3D assets, textured and rendered them.</li>
+                        <li>Utilized Java, HTML, and CSS for animation.</li>
+                    </ul>
+                </div>
+
+ </div>   
+
+<!-- -------- Cyber-Feminist Speculative Future ----------- -->
+ <div class="wrapperForProjects">
+                
+                <div class="project-row" data-image="cyberFeminism.png">
+                    <div class="column">2023</div>
+                    <div class="column project-title">Cyber-Feminist Speculative Future</div>
+                    <div class="column">3D Artist & Animator</div>
+                    <div class="column">Unreal Engine, Metahumans, Mixamo, Blender</div>
+                </div>
+                <div class="project-details">
+                    <div class="project-media">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/830459168?h=9a37ae16e6"  class="siteIframe"></iframe>
+                    </div>
+                    <p>Created a short animation and poem inspired by cyberfeminist literature alongside friend and collaborator Claude.</p>
+              
+                </div>
+</div>
+
+<!-- DAVE COURT ------------ HOUSE PARTY  -->
+<div class="wrapperForProjects">
+    <div class="project-row" data-image="DaveCourt.png">
+        <div class="column">2021</div>
+        <div class="column project-title">House Party - Dave Court</div>
+        <div class="column">Photogrammetry-Based 3D House Remodeling</div>
+        <div class="column">Photogrammetry, 3D Modeling, Texturing</div>
     </div>
 
-
-
-
-
-<!--  Speculative Futures site div - content needed  -->
-        <div id="speculativeFutureDiv" class="popupCard">
-            <div class="closeButton" id="closeButtonSpeculativeFuture">
-                <img src="cross.png" alt=""></div>
-            <h1>
-                Speculative Futures Site / Story
-            </h1>
- 
-        </div>
-
-<!--  Media Player  -->
-        <div  class="popupCard">
-            <div class="closeButton" id="closeButtonMediaPlayer">
-                <img src="cross.png" alt=""></div>
-            <h1>
-                Custom media player
-            </h1><br>
-            <h2>Creative coding experiment with Java and HTML</h2>
-            <div id="mediaPlayerDiv" class="bodyTextPopups">
-                <br>
-            <ul>
-                <li>Initiated the project by seeking design inspiration from established media players and browsing aesthetics on Pinterest..</li>
-                <li>Designed 3D assets, textured and rendered them</li>
-                <li>Utilised Java, Html and Css to animate the final product</li>
-            </ul><br>
-            <a href="https://lucash0rta.github.io/im2350/a2/e4/index.html">Link to the site</a>
-            <br>
-            <div class="mediaPlayerPhotoHolder">
-            <img class="mediaplayphoto" src="https://lucash0rta.github.io/im2350/a2/e4/Screenshot%202023-09-18%20125447.png" alt="3d model screenshot">
-        <img class="mediaplayphoto" src="mediaPlayer-screenshot.png" alt="Cd Player">
-    </div>
-        </div>
-        </div>
-
-        <!-- Draining - In Disillusion Music Video -->
-
-        <div  class="popupCard">
-            <div class="closeButton" id="closeButtonDraining">
-                <img src="cross.png" alt=""></div>
-            <h1>
-                Draining - In Disillusion
-            </h1><br>
-            <h2>3D Environment design, modelling, texturing and animation for the music video</h2>
-            <div id="drainingDiv" class="bodyTextPopups"><br>
-            <ul>
-                <li>Collaborated with video producers and directors to develop creative concepts for VFX shots in the music video.</li>
-                <li>Designed 3D environments based on client briefs.</li>
-                <li>Modeled, textured, animated camera movements, and rendered the video.</li>
-            </ul><br><br>
-            <iframe width="100%" height="360" src="https://www.youtube-nocookie.com/embed/7aRwrGpMPnM?si=WY59al4IZDcuVAMf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        </div>
-
-        <!-- Paradise Club music video pop up  -->
-
-        <div  class="popupCard">
-            <div class="closeButton" id="closeButtonParadiseClub">
-                <img src="cross.png" alt=""></div>
-            <h1>
-                Paradise Club - The Seed
-            </h1><br>
-            <h2>3D Environment design, modelling, texturing and animation for the music video</h2><br>
-            <div id="paradiseClubDiv" class="bodyTextPopups">
-            <ul>
-                <li>Collaborated with video producers and directors to develop creative concepts for VFX shots in the music video.</li>
-                <li>Designed 3D environments based on client briefs.</li>
-                <li>Modeled, textured, animated camera movements, and rendered the video.</li>
-              </ul>
-              <br><br><iframe width="100%" height="360" src="https://www.youtube.com/embed/6XYe0n3KoVg?si=UWlRAAtbAGL5OPQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="project-details">
+        <div class="project-media">
+            <div id="daveCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <img src="https://cdn.prod.website-files.com/6244d97d083df084b17ea3e6/62e4af1d14ccf27e2ba53608_3-web-p-1600.jpg" class="gifIMG" alt="House Party Project Image 1">
+                    </div>
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <img src="https://cdn.prod.website-files.com/6244d97d083df084b17ea3e6/62d374a4a73d9042d69665ad_Dave%20Court%20House%20party%20exhibition%20(53%20of%20107).jpg" class="gifIMG" alt="House Party Project Image 2">
+                    </div>
+                    <!-- Third Slide -->
+                    <div class="carousel-item">
+                        <img src="https://cdn.prod.website-files.com/6244d97d083df084b17ea3e6/6260a2b4482bfb3e7eb1592a_Ironbank%2BFinal%2BEdits-60.jpg" class="gifIMG" alt="House Party Project Image 3">
+                    </div>
+                    <!-- Fourth Slide - YouTube Video -->
+                    <div class="carousel-item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZgsyihzI1ZI" frameborder="0" allowfullscreen class="siteIframe"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#daveCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#daveCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </div>
-
-        <div  class="popupCard">
-            <div class="closeButton" id="closeButtoncyberFeminism">
-                <img src="cross.png" alt=""></div>
-            <h1>
-                Cyber-Feminist Speculative Future
-            </h1><br>
-            <h2>A Short animation and poem riffing off cyberfeminist literature and art. </h2><br>
-            <div id="cyberFeminismDiv" class="bodyTextPopups">
+        
+           
+            <p>Remodeled a house using photogrammetry and optimized textures.</p>
             <ul>
-                <li>Explored cyberfeminism concepts through influential texts and artworks.</li>
-                <li>Developed ideas and imagery inspired by cyberfeminist pioneers.</li>
-                <li>Created mood boards, researched, and refined concepts.</li>
-                <li>Executed 3D modeling, texturing, and dynamic animation.</li>
-                <li>Enhanced realism using Unreal Engine's live link for motion capture.</li>
-                <li>Utilized software tools: Metahumans, Mixamo, Photoshop, Premiere Pro, Blender.</li>
-              </ul>
-              <br><br>
-              <iframe title="vimeo-player" src="https://player.vimeo.com/video/830418974?h=e3576ac403" width="100%" height="360" frameborder="0"    allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div  class="popupCard">
-            <div class="closeButton" id="closeButtonBrewFinder">
-                <img src="cross.png" alt=""></div>
-            <h1>
-                Brew Finder
-            </h1><br>
-            <h2>Designing Brew Finder's Intuitive UX/UI for Melbourne's Coffee Aficionados </h2><br>
-            <div id="brewFinderDiv" class="bodyTextPopups">
-            <p>Brew Finder is an innovative coffee review website, specifically tailored for the diverse coffee enthusiasts of Melbourne. This high-fidelity, functioning prototype, developed in Figma, offers a seamless and engaging user experience.</p>
-              <br><br>
-              <iframe title="vimeo-player" src="https://player.vimeo.com/video/830418974?h=e3576ac403" width="100%" height="360" frameborder="0"    allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <!--  ContactMe Div  -->
-        <div id="ContactMe" class="popupCard">
-            <div class="closeButton" id="closeButtonContactMe">
-                <img src="cross.png" alt=""></div>
-            <h1>
-                Contact Me
-            </h1>
-            <div class="bodyTextPopups" id="contactMeDiv"> <br>
-                Follow Me on <a href="https://www.instagram.com/_lucashorta_/">Instagram</a> 
-                <br><br>
-                Send me an email: lucashorta2001@gmail.com
-            </div>
- 
+                <li>Captured detailed photographs, edited in Photoshop for texture creation.</li>
+                <li>Utilized professional photogrammetry as an accurate reference point for the project's scale.</li>
+                <li>Remodeled the entire house using optimized and clean geometry.</li>
+                <li>Integrated textures onto the model with precision and clarity.</li>
+                <li>Organized and labeled output files, ensuring easy access for collaborators.</li>
+            </ul>
         </div>
     </div>
+</div>
 
-    <!-- end of div contentHolder -->
 
-    <p>this is the end of my site</p>
 
+
+<!-- -------- Draining - In Disillusion ----------- -->
+<div class="wrapperForProjects">
+                
+                <div class="project-row" data-image="Draining.png">
+                    <div class="column">2021</div>
+                    <div class="column project-title">Draining - In Disillusion</div>
+                    <div class="column">3D Artist</div>
+                    <div class="column">3D Modeling, Animation, Rendering</div>
+                </div>
+                <div class="project-details">
+                    <div class="project-media">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7aRwrGpMPnM?si=i17NUUMgJk4Siaxn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="siteIframe"></iframe>
+                    </div>
+                   
+                    <p>Collaborated with video directors Jack Bielby and Thomas Schaefer to develop VFX shots.</p>
+                    <ul>
+                        <li>Designed 3D environments based on client briefs.</li>
+                        <li>Modeled, textured, animated, and rendered the video.</li>
+                    </ul>
+                    <div style="color: #888; font-style: italic;">
+                        <strong>Note on Credits:</strong> Some credits list "Skye," which was a name I used for some time.
+                    </div>
+                </div>
+
+</div>
+
+<!-- -------- SHADY NASTY - PRETTYB0YZ ----------- -->
+<div class="wrapperForProjects">
+    <div class="project-row" data-image="shadyNasty.png">
+        <div class="column">2021</div>
+        <div class="column project-title">SHADY NASTY - PRETTYB0YZ</div>
+        <div class="column">3D Artist</div>
+        <div class="column">3D VFX, Additional VFX</div>
+    </div>
+    <div class="project-details">
+        <div class="project-media">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y-uKPQdnW-c?si=qsHM-xR6svD0BmrA" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+        <p>Collaborated with directors and cinematographers to create additional visual effects</p>
+       
+        <div style="color: #888; font-style: italic;">
+            <strong>Note on Credits:</strong> Some credits list "Skye," which was a name I used for some time.
+        </div>
+    </div>
+</div>
+
+
+
+<!-- -------- Paradise Club - The Seed ----------- -->
+<div class="wrapperForProjects">
+    <div class="project-row" data-image="paradiseClub.png">
+        <div class="column">2020</div>
+        <div class="column project-title">Paradise Club - The Seed</div>
+        <div class="column">3D Artist</div>
+        <div class="column">3D Modeling, Animation, Rendering</div>
+    </div>
+    <div class="project-details">
+        <div class="project-media">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6XYe0n3KoVg?si=DXj7ttoojk29KdPI" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen class="siteIframe"></iframe>
+        </div>
+        <p>Collaborated with video producers to develop creative concepts for VFX shots.</p>
+        <ul>
+            <li>Designed 3D environments based on client briefs.</li>
+            <li>Modeled, textured, animated, and rendered the video.</li>
+        </ul>
+        <div style="color: #888; font-style: italic;">
+            <strong>Note on Credits:</strong> Some credits list "Skye," which was a name I used for some time.
+        </div>
+    </div>
+</div>
+
+
+
+<!-- -------- Anada Spanish Restaurant ----------- -->
+<div class="wrapperForProjects">
+                
+                <div class="project-row" data-image="Anada.png">
+                    <div class="column">2023</div>
+                    <div class="column project-title">Anada Spanish Restaurant</div>
+                    <div class="column">Waiter & Content Creator</div>
+                    <div class="column">DSLR, Adobe Premiere Pro</div>
+                </div>
+                <div class="project-details">
+                    <div class="project-media">
+                        <div style="display: flex; justify-content: center;">
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CraPvknsiQj/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; width:100%; padding:0;">
+                                <div style="padding:16px;">
+                                    <a href="https://www.instagram.com/reel/CraPvknsiQj/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                                        <div style="padding: 19% 0;"></div>
+                                        <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                            <!-- SVG or other content here -->
+                                        </div>
+                                        <div style="padding-top: 8px; color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-weight:550; line-height:18px;">
+                                            View this post on Instagram
+                                        </div>
+                                    </a>
+                                    <p style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; text-align:center; margin:8px 0;">
+                                        <a href="https://www.instagram.com/reel/CraPvknsiQj/?utm_source=ig_embed&amp;utm_campaign=loading" style="color:#c9c8cd; text-decoration:none;" target="_blank">A post shared by Añada Restaurant (@anadarestaurant)</a>
+                                    </p>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                        
+                    </div>
+                 
+                   
+                    <p>While working as a waiter, contributed to the restaurant's marketing efforts by creating visual content for social media channels.</p>
+                    <ul>
+                        <li>Produced short videos and photos for Instagram reels using a DSLR camera.</li>
+                        <li>Wrote engaging captions to accompany the visual content.</li>
+                        <li>Assisted in the development of additional promotional materials.</li>
+                        <li>Contributed content intermittently from May to November 2023.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </section>
         
-
-        
-        
-
-
-    </body>
-
+    </main>
+    <div id="imageContainer" class="image-container"></div>
+    
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+</body>
 </html>
