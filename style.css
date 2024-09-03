@@ -17,7 +17,7 @@ body {
     margin: auto;
 }
 
-body::before {
+/* body::before {
     content: "";
     position: absolute;
     top: 0;
@@ -29,7 +29,7 @@ body::before {
     background-position: center;
     opacity: 0.01;
     z-index: -1;
-}
+} */
 
 header {
     padding: 20px 0;
@@ -453,3 +453,30 @@ main {
     font-size: 14px; /* Slightly smaller text */
 }
 
+
+
+@keyframes pulse {
+    0% {
+        background: radial-gradient(circle, rgba(200, 255, 255, 1) 0%, rgba(255, 200, 200, 0.5) 70%);
+    }
+    50% {
+        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 70%);
+    }
+    100% {
+        background: radial-gradient(circle, rgb(228, 252, 252) 0%, rgba(255, 255, 255, 0.5) 70%);
+    }
+}
+
+.fullscreenGradient {
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+    z-index: -1;
+    animation: pulse 10s infinite;
+}
