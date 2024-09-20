@@ -1,0 +1,202 @@
+body {
+    font-family: 'VT323', monospace;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://d5wt70d4gnm1t.cloudfront.net/media/a-s/articles/2230-812163997241/the-artists-have-been-set-free-post-internet-star-joshua-citarella-on-how-the-web-can-liberate-900x450.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+}
+
+.slideshow-border {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 0px #000000;
+    overflow: hidden; /* Prevents overflow */
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    max-width: 100%; /* Ensure it doesn't exceed container */
+    height: 750px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow: scroll;
+}
+
+.slide.active {
+    display: block;
+}
+
+h1, h2 {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000000;
+    text-shadow: 2px 2px #00ffff;
+}
+
+p {
+    font-size: 18px;
+}
+
+.slide-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.slide-images img {
+    max-width: 200px;
+    margin: 10px;
+    border: 2px solid #000000;
+}
+
+.singleImage {
+    max-width: 70%;
+    max-height: 500px; /* Ensure it fits within the container */
+    width: auto; /* Allow the width to adjust proportionally */
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio while fitting within the container */
+    margin: 10px auto; /* Simplified margin */
+    border: 2px solid #000000;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+button {
+    // ... empty rule ...
+}
+
+/* Timeline container */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .timeline-item {
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .timeline-item span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-item.active span,
+  .timeline-item.active p {
+    color: blue;
+  }
+  
+  .timeline-item p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: blue;
+    width: 0;
+    transition: width 0.3s;
+  }
+  
+  .timeline-item.active .progress-bar {
+    width: 100%;
+  }
+  
+  /* Slide navigation */
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+
+#website {
+   width: 100%;
+    font-weight: bold;
+    height: 900px;
+    max-width: 1200px;
+} 
+
+#mobilewebsite {
+  width: 405px; /* Common width for mobile devices */
+  height: 667px; /* Common height for mobile devices */
+  font-weight: bold;
+  border: 1px solid #000; /* Optional: Add a border to visualize the frame */
+  margin: 0 auto; /* Center the iframe */
+}
+
+.infoCard {
+    justify-content: center;
+
+  align-items: center;
+  flex-direction: column;
+ente  background-color: #f0f0f0;
+    f  padding: 20px;
+
+    background-color: #f0f0f0;
+  margin: 20px auto; /* Center the card */
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 0px #000000;
+  max-width: 1000px; /* Ensure it doesn't exceed 900px */
+}
+
+
+img {
+    max-width: 400px;
+    max-height: 500px;
+    height: auto;
+    display: inline;
+
+}
+
+.follower img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+#thisthing {
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
